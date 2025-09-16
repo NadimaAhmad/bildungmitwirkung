@@ -9,6 +9,11 @@
          url('fonts/BrothersideSignature.ttf') format('truetype');
 }
 
+.btn-success{
+    background-color: rgb(108, 178, 4) !important    ;
+    border: none;
+}
+
 
 
 .ls-1 {

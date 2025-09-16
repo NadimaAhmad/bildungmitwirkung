@@ -66,7 +66,12 @@
             box-shadow: 0 6px 18px rgba(251, 194, 82, 0.14);
         }
         .btn-donate:focus {
-            box-shadow: 0 0 0 .2rem rgba(251, 194, 82, 0.2);
+            box-shadow: 0 0 0 .2rem rgba(135, 90, 1, 0.2);
+             background: var(--bmw-coral);
+            color: #111827;
+            border: none;
+            font-weight: 600;
+
         }
         /* ===========================
        Hero
