@@ -15,44 +15,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mod.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
 
-    <div id="google_translate_element" class="position-fixed bottom-0 end-0 mb-5 me-5"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {
-                    pageLanguage: 'en', // This is correct, as the page content is now English
-                    includedLanguages: 'en,de,id',
-                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                    autoDisplay: false
-                },
-                'google_translate_element'
-            );
-        }
-    </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <nav class="navbar navbar-expand-lg mt-3 navbar-light fixed-top scrolled"> <div class="container bg-white px-3 py-2 rounded-5">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"> <img src="images/bmw logo.svg" alt="Bildung mit Wirkung e.V. Logo" height="50px" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav m-auto align-items-lg-center mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#impact">Impact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="program.html">Programs</a></li> <li class="nav-item"><a class="nav-link" href="index.html#getinvolved">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex ms-3 align-items-center">
+                    <a href="index.html#donate" class="btn btn-donate btn-sm me-3">Donate</a> <div class="lang-switcher">
+                        <a href="javascript:void(0)" class="lang-btn" data-lang="de" title="Deutsch">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/de.svg" alt="German" width="24">
+                        </a>
+                        <a href="javascript:void(0)" class="lang-btn" data-lang="en" title="English">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gb.svg" alt="English" width="24">
+                        </a>
+                        <a href="javascript:void(0)" class="lang-btn" data-lang="id" title="Bahasa Indonesia">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/id.svg" alt="Indonesian" width="24">
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </nav>
+    <div id="google_translate_element"></div>
 
-    <!-- Breadcrumbs -->
-    <div class="container pt-3 container-narrow">
+
+    <div class="container pt-5 container-narrow" style="padding-top: 120px !important;">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item fw-bold"><a href="program.html">Programs</a></li>
-
             </ol>
         </nav>
     </div>
 
 
 
-    <header class="section-compact bg-light mt-5">
-
-        <div class="container container-narrow">
-            <a href="index.html#programs" class="btn btn-dark btn-lg"><i class="bi bi-arrow-left me-2"></i> Back to
+    <header class="section-compact bg-light mt-4"> <div class="container container-narrow">
+            <a href="index.html" class="btn btn-dark btn-lg"><i class="bi bi-arrow-left me-2"></i> Back to
                 Home</a>
         </div>
         <div class="container container-narrow  mt-4">
@@ -79,7 +93,7 @@
                                 buildings, teacher shortages, and minimal electricity & internet. We distribute books,
                                 uniforms, and learning materials.</p>
                             <div class="mt-3">
-                                <a class="btn btn-outline-secondary btn-sm" href="index.html#donate">See details</a>
+                                <a class="btn btn-outline-secondary btn-sm" href="program-detail.html">See details</a>
                             </div>
                         </div>
                     </article>
@@ -95,7 +109,7 @@
                                 basic health check-ups, food aid, and social support to ensure their dignity is
                                 maintained.</p>
                             <div class="mt-3">
-                                <a class="btn btn-outline-secondary btn-sm" href="index.html#donate">See details</a>
+                                <a class="btn btn-outline-secondary btn-sm" href="program-detail.html">See details</a>
                             </div>
                         </div>
                     </article>
@@ -111,7 +125,7 @@
                                 (Lentera
                                 Aksara Negeri Foundation) to train local volunteers and build sustainable programs.</p>
                             <div class="mt-3">
-                                <a class="btn btn-outline-secondary btn-sm" href="index.html#getinvolved">See
+                                <a class="btn btn-outline-secondary btn-sm" href="program-detail.html">See
                                     details</a>
                             </div>
                         </div>
@@ -128,7 +142,7 @@
                                 Indonesia
                                 to find innovative, sustainable local solutions, bridging both cultures.</p>
                             <div class="mt-3">
-                                <a class="btn btn-outline-secondary btn-sm" href="index.html#about">See details</a>
+                                <a class="btn btn-outline-secondary btn-sm" href="program-detail.html">See details</a>
                             </div>
                         </div>
                     </article>
@@ -143,7 +157,7 @@
                             <p>Helping families affected by floods, fires, earthquakes, and other natural disasters with
                                 emergency aid such as food, shelter, and medical supplies.</p>
                             <div class="mt-3">
-                                <a class="btn btn-outline-secondary btn-sm" href="index.html#donate">See details</a>
+                                <a class="btn btn-outline-secondary btn-sm" href="program-detail.html">See details</a>
                             </div>
                         </div>
                     </article>
@@ -151,11 +165,6 @@
 
             </div>
         </div>
-
-
-
-
-
     </main>
 
 
@@ -172,7 +181,7 @@
                 <div>
                     <h6>Quick Links</h6>
                     <ul class="list-unstyled muted small">
-                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="program.html">Programs</a></li>
                         <li><a href="index.html#impact">Impact</a></li>
                         <li><a href="index.html#partners">Partners</a></li>
                         <li><a href="index.html#faq">FAQ</a></li>
@@ -204,6 +213,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,de,id', // English, German, Indonesian
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                    autoDisplay: false
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
 
 </html>

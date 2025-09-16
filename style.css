@@ -137,3 +137,59 @@ a{
 .member :nth-child(16) {
     transition-delay: 3200ms;
 }
+
+
+/* --- Style Tombol Bendera (Language Switcher) --- */
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.lang-switcher .lang-btn {
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: opacity 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+.lang-switcher .lang-btn:hover {
+    opacity: 1;
+    background-color: #f0f0f0;
+}
+.lang-switcher .lang-btn.active {
+     opacity: 1;
+     background-color: #e0e0e0;
+     box-shadow: 0 0 0 2px var(--bmw-sky, #007bff); /* Fallback ke biru jika var tidak ada */
+}
+.lang-switcher img {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* --- Sembunyikan UI Bawaan Google Translate --- */
+#google_translate_element {
+    display: none !important; /* Sembunyikan widget dropdown asli */
+    position: fixed; /* Hentikan agar tidak memakan ruang */
+    bottom: -100px;
+    right: -100px;
+    z-index: -999;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important; /* Sembunyikan bar atas setelah translasi */
+}
+body {
+    top: 0px !important; /* Perbaiki masalah margin atas dari bar Google */
+}
+/* Sembunyikan tooltip "Original" dari Google */
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
