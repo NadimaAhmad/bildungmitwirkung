@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment im Gange</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Menggunakan font Inter dari Google Fonts untuk tampilan modern */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Styling kustom untuk spinner */
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #3b82f6; /* Warna biru (blue-500) */
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+        }
+
+        /* Keyframes untuk animasi berputar */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Container Utama yang Terpusat -->
+    <div class="w-full max-w-sm bg-gray-800 p-8 sm:p-10 rounded-xl shadow-2xl border border-gray-700/50">
+        
+        <!-- Area Konten Loading -->
+        <div class="flex flex-col items-center">
+            
+            <!-- Loading Spinner -->
+            <div class="loading-spinner mb-6"></div>
+
+            <!-- Judul dan Deskripsi -->
+            <h1 class="text-2xl font-bold text-white mb-2">
+                Bereitstellung läuft
+            </h1>
+            <p class="text-sm text-gray-400 text-center">
+                Ressourcen werden geladen und das Netzwerk wird aktiviert. Bitte warten Sie einen Moment.
+            </p>
+
+            <!-- Progress Bar (Efek Visual) -->
+            <div class="w-full h-1 bg-gray-700 rounded-full mt-6 overflow-hidden">
+                <!-- Animasi Bar -->
+                <div class="h-full bg-green-500 rounded-full transition-all duration-1000 ease-linear" style="width: 80%;"></div>
+            </div>
+            <p class="text-xs text-green-400 mt-2">
+                80% Abgeschlossen
+            </p>
+        </div>
+
+        <!-- Footer Kecil di Bawah Konten Utama -->
+        <div class="mt-12 pt-4 border-t border-gray-700/50">
+            <p class="text-xs text-gray-500 text-center tracking-wider">
+                bmw-ev.org
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
